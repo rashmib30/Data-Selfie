@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial;
+        color: white;
+        margin: 0;
+      }
+
+      /* Left Section for Figma Plugin (70%) */
+      .split2 {
+        height: 100%;
+        width: 70%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden; /* Prevent overflow */
+        background-color: #111;
+      }
+
+      /* Right Section for Text (30%) */
+      .split {
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #660e3e;
+      }
+
+      /* Styling for right section and image */
+      .split .centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      .split .centered img {
+        max-width: 100%; /* Image width will adjust to the container size */
+        max-height: 100%; /* Image height will adjust to the container size */
+        object-fit: contain; /* Ensures the entire image is visible */
+        transform: scale(1.2); /* Zoom in the image by 10% */
+      }
+
+      /* Responsively style iframe */
+      iframe {
+        width: 100%;
+        height: 100%; /* Full height for iframe to avoid overflow */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left section for Figma Plugin -->
+    <div class="split2">
+      <iframe
+        src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/KT7GjThCxamFPDtoBpx8EC/Interactive-Selfie?page-id=0:1&node-id=74-1673&starting-point-node-id=74:1673&scaling=min-zoom&content-scaling=fixed&hide-ui=1"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Right section for text content -->
+    <div class="split">
+      <div class="centered">
+        <img src="images/Frame 22.png" />
+      </div>
+    </div>
+  </body>
+</html>
