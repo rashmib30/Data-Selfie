@@ -53,7 +53,14 @@
       }
     </style>
   </head>
-  <body>
+  <script>
+    function myFunction() {
+      alert(
+        "The page contains an embedded prototype, which may take some time to load. Thank you for your patience."
+      );
+    }
+  </script>
+  <body onload="myFunction()">
     <!-- Left section for Figma Plugin -->
     <div class="split2">
       <iframe
